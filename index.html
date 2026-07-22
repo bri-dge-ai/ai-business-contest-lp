@@ -342,6 +342,42 @@
   }
   .entry strong { font-weight: 600; }
 
+  /* LINE */
+  .line-card {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-top: 32px;
+    padding: 20px 24px;
+    max-width: 480px;
+    border: 1px solid var(--gold);
+    background: var(--surface);
+    text-decoration: none;
+    color: var(--ink);
+  }
+  .line-card:hover { border-color: var(--moss); }
+  .line-card-qr {
+    flex-shrink: 0;
+    display: block;
+    padding: 8px;
+    background: #fff;
+    border: 1px solid var(--line);
+  }
+  .line-card-qr img { display: block; }
+  .line-card-text {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .line-card-text strong {
+    font-family: var(--font-display);
+    font-size: 1.05rem;
+  }
+  .line-card-text span {
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+  }
+
   /* footer */
   footer {
     padding: 40px 0 60px;
@@ -479,6 +515,23 @@
         <span class="dot" aria-hidden="true"></span>
         <span><strong>参加登録の受付は近日開始予定です。</strong>詳細が決まり次第、本ページにて公開します。</span>
       </div>
+    </div>
+  </section>
+
+  <section id="line">
+    <div class="wrap">
+      <p class="eyebrow">Stay Connected</p>
+      <h2>公式LINE</h2>
+      <p class="lede">公式LINEにて確定情報を随時配信していきます！日程・会場・参加登録開始などの最新情報をいち早くお届けしますので、ぜひご登録ください。</p>
+      <a class="line-card" href="https://qr-official.line.me/gs/M_093pehuy_BW.png?oat_content=qr" target="_blank" rel="noopener">
+        <span class="line-card-qr">
+          <img src="https://qr-official.line.me/gs/M_093pehuy_BW.png?oat_content=qr" alt="公式LINE友だち追加QRコード" width="120" height="120">
+        </span>
+        <span class="line-card-text">
+          <strong>友だち追加はこちら</strong>
+          <span>QRコードを読み取るか、画像をタップして追加</span>
+        </span>
+      </a>
     </div>
   </section>
 
