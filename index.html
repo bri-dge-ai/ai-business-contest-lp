@@ -274,6 +274,27 @@
     color: var(--ink-soft);
   }
 
+  .feature-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1rem;
+    max-width: 42em;
+  }
+  .feature-list li {
+    position: relative;
+    padding-left: 20px;
+  }
+  .feature-list li::before {
+    content: "—";
+    position: absolute;
+    left: 0;
+    color: var(--gold);
+  }
+
   /* timeline */
   .timeline {
     margin-top: 44px;
@@ -480,10 +501,20 @@
           </td>
         </tr>
         <tr>
+          <th>ケース</th>
+          <td>「投資ファンドのポートフォリオ企業の現場課題を特定し、データ分析やAI実装を通じて、営業利益率の改善を促すビジネスアイデアを創出せよ」<span class="badge" style="margin-left:8px;">暫定</span></td>
+        </tr>
+        <tr>
           <th>主催</th>
           <td>AI人材のためのビジネスコンテスト（仮称）運営チーム</td>
         </tr>
       </table>
+
+      <h3 class="subhead">本イベントの特徴</h3>
+      <ul class="feature-list">
+        <li>データサイエンスやAIを学んでいる学生を対象としていること</li>
+        <li>データ分析やアプリのプロトタイプ開発を組み込んだビジコンであること</li>
+      </ul>
 
       <h3 class="subhead">タイムライン<span class="badge" style="margin-left:10px;">想定</span></h3>
       <div class="timeline">
