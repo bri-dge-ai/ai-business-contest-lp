@@ -7,14 +7,14 @@
 <meta name="description" content="AIやデータサイエンスに興味のある学生を対象とした、AI人材によるビジネスコンテスト（仮称）。2026年11月ごろ、麻布台ヒルズにて2日間開催予定。">
 <style>
   :root {
-    --bg: #eaf3f0;
-    --surface: #dcebe6;
-    --ink: #0f211d;
-    --ink-soft: #4c6a62;
-    --teal: #147d6b;
-    --deep: #14607a;
-    --line: rgba(15, 33, 29, 0.14);
-    --shadow: rgba(15, 33, 29, 0.08);
+    --bg: #eef4fa;
+    --surface: #dce8f4;
+    --ink: #0d1b2a;
+    --ink-soft: #6f6f6f;
+    --blue: #0874bb;
+    --navy: #003580;
+    --line: rgba(13, 27, 42, 0.14);
+    --shadow: rgba(13, 27, 42, 0.08);
 
     --font-body: "Hiragino Sans", "Yu Gothic", "YuGothic", "Noto Sans JP", -apple-system, sans-serif;
     --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
@@ -22,37 +22,37 @@
 
   @media (prefers-color-scheme: dark) {
     :root {
-      --bg: #0c1917;
-      --surface: #12211e;
-      --ink: #e9f5f1;
-      --ink-soft: #93aca4;
-      --teal: #4fd8bd;
-      --deep: #4fb6d9;
-      --line: rgba(233, 245, 241, 0.14);
+      --bg: #071322;
+      --surface: #0d1f33;
+      --ink: #eaf1f8;
+      --ink-soft: #9fb0c0;
+      --blue: #35a7e6;
+      --navy: #5b7fd1;
+      --line: rgba(234, 241, 248, 0.14);
       --shadow: rgba(0, 0, 0, 0.35);
     }
   }
 
   :root[data-theme="dark"] {
-    --bg: #0c1917;
-    --surface: #12211e;
-    --ink: #e9f5f1;
-    --ink-soft: #93aca4;
-    --teal: #4fd8bd;
-    --deep: #4fb6d9;
-    --line: rgba(233, 245, 241, 0.14);
+    --bg: #071322;
+    --surface: #0d1f33;
+    --ink: #eaf1f8;
+    --ink-soft: #9fb0c0;
+    --blue: #35a7e6;
+    --navy: #5b7fd1;
+    --line: rgba(234, 241, 248, 0.14);
     --shadow: rgba(0, 0, 0, 0.35);
   }
 
   :root[data-theme="light"] {
-    --bg: #eaf3f0;
-    --surface: #dcebe6;
-    --ink: #0f211d;
-    --ink-soft: #4c6a62;
-    --teal: #147d6b;
-    --deep: #14607a;
-    --line: rgba(15, 33, 29, 0.14);
-    --shadow: rgba(15, 33, 29, 0.08);
+    --bg: #eef4fa;
+    --surface: #dce8f4;
+    --ink: #0d1b2a;
+    --ink-soft: #6f6f6f;
+    --blue: #0874bb;
+    --navy: #003580;
+    --line: rgba(13, 27, 42, 0.14);
+    --shadow: rgba(13, 27, 42, 0.08);
   }
 
   * { box-sizing: border-box; }
@@ -97,7 +97,7 @@
     bottom: 0;
   }
   .skyline .tower {
-    background: linear-gradient(180deg, var(--teal) 0%, var(--ink) 78%);
+    background: linear-gradient(180deg, var(--blue) 0%, var(--ink) 78%);
     opacity: 0.16;
   }
   .skyline .tower--main {
@@ -153,8 +153,8 @@
     color: var(--ink-soft);
   }
   .badge--accent {
-    border-color: var(--teal);
-    color: var(--teal);
+    border-color: var(--blue);
+    color: var(--blue);
   }
 
   h1 {
@@ -168,7 +168,7 @@
   }
   h1 em {
     font-style: normal;
-    color: var(--teal);
+    color: var(--blue);
   }
 
   .tagline {
@@ -189,7 +189,7 @@
     font-size: 0.72rem;
     letter-spacing: 0.14em;
     text-transform: uppercase;
-    color: var(--deep);
+    color: var(--navy);
     margin: 0 0 14px;
   }
 
@@ -222,9 +222,9 @@
     font-family: var(--font-body);
     font-weight: 700;
     font-size: clamp(2.6rem, 6vw, 4rem);
-    color: var(--teal);
+    color: var(--blue);
     line-height: 1;
-    border-left: 2px solid var(--teal);
+    border-left: 2px solid var(--blue);
     padding-left: 20px;
   }
 
@@ -290,14 +290,14 @@
     content: "—";
     position: absolute;
     left: 0;
-    color: var(--teal);
+    color: var(--blue);
   }
 
   /* case */
   .case-quote {
     margin: 0 0 32px;
     padding: 28px 32px;
-    border-left: 3px solid var(--teal);
+    border-left: 3px solid var(--blue);
     background: var(--surface);
     font-family: var(--font-body);
     font-weight: 500;
@@ -346,7 +346,7 @@
     padding-top: 2px;
   }
   .day-slot .slot-desc { flex: 1; }
-  .timeline .day--judge .day-label { color: var(--deep); }
+  .timeline .day--judge .day-label { color: var(--navy); }
 
   .subhead {
     font-family: var(--font-body);
@@ -362,14 +362,14 @@
     align-items: center;
     gap: 18px;
     padding: 22px 26px;
-    border: 1px solid var(--teal);
+    border: 1px solid var(--blue);
     color: var(--ink);
   }
   .entry .dot {
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background: var(--teal);
+    background: var(--blue);
     flex-shrink: 0;
   }
   .entry strong { font-weight: 600; }
@@ -382,12 +382,12 @@
     margin-top: 32px;
     padding: 20px 24px;
     max-width: 480px;
-    border: 1px solid var(--teal);
+    border: 1px solid var(--blue);
     background: var(--surface);
     text-decoration: none;
     color: var(--ink);
   }
-  .line-card:hover { border-color: var(--deep); }
+  .line-card:hover { border-color: var(--navy); }
   .line-card-qr {
     flex-shrink: 0;
     display: block;
