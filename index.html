@@ -20,6 +20,7 @@
 <style>
   :root {
     --bg: #ffffff;
+    --bg-rgb: 255, 255, 255;
     --surface: #f4f6f8;
     --ink: #10171c;
     --ink-soft: #6f6f6f;
@@ -35,6 +36,7 @@
   @media (prefers-color-scheme: dark) {
     :root {
       --bg: #071322;
+      --bg-rgb: 7, 19, 34;
       --surface: #0d1f33;
       --ink: #eaf1f8;
       --ink-soft: #9fb0c0;
@@ -47,6 +49,7 @@
 
   :root[data-theme="dark"] {
     --bg: #071322;
+    --bg-rgb: 7, 19, 34;
     --surface: #0d1f33;
     --ink: #eaf1f8;
     --ink-soft: #9fb0c0;
@@ -58,6 +61,7 @@
 
   :root[data-theme="light"] {
     --bg: #ffffff;
+    --bg-rgb: 255, 255, 255;
     --surface: #f4f6f8;
     --ink: #10171c;
     --ink-soft: #6f6f6f;
@@ -94,11 +98,72 @@
     padding: 0 clamp(20px, 5vw, 56px);
   }
 
-  /* ---------- Header image ---------- */
+  /* ---------- Header visual ---------- */
   .skyline {
-    height: clamp(220px, 34vw, 360px);
+    position: relative;
+    height: clamp(340px, 42vw, 520px);
     overflow: hidden;
-    background: url('images/header-v2.png') center / cover no-repeat;
+    isolation: isolate;
+    background: url('images/header-v2.png') 64% center / cover no-repeat;
+  }
+  .skyline::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background: linear-gradient(
+      90deg,
+      rgba(var(--bg-rgb), 0.70) 0%,
+      rgba(var(--bg-rgb), 0.70) 52%,
+      rgba(var(--bg-rgb), 0.52) 60%,
+      rgba(var(--bg-rgb), 0.22) 69%,
+      rgba(var(--bg-rgb), 0) 79%
+    );
+  }
+  .skyline-logo {
+    position: absolute;
+    left: max(20px, calc((100% - 1280px) / 2));
+    top: 50%;
+    width: clamp(380px, 42vw, 580px);
+    transform: translateY(-50%);
+  }
+  .skyline-logo img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  @media (prefers-color-scheme: dark) {
+    .skyline-logo img {
+      filter: brightness(0) invert(1);
+    }
+  }
+  :root[data-theme="dark"] .skyline-logo img {
+    filter: brightness(0) invert(1);
+  }
+  :root[data-theme="light"] .skyline-logo img {
+    filter: none;
+  }
+  @media (max-width: 560px) {
+    .skyline {
+      height: 360px;
+      background-position: 60% top;
+    }
+    .skyline::before {
+      background: linear-gradient(
+        0deg,
+        rgba(var(--bg-rgb), 0.70) 0%,
+        rgba(var(--bg-rgb), 0.70) 40%,
+        rgba(var(--bg-rgb), 0.48) 50%,
+        rgba(var(--bg-rgb), 0) 72%
+      );
+    }
+    .skyline-logo {
+      left: 12px;
+      top: auto;
+      bottom: 12px;
+      width: calc(100% - 24px);
+      transform: none;
+    }
   }
 
   /* ---------- Header ---------- */
@@ -423,7 +488,11 @@
 <body>
 
 <header class="hero">
-  <div class="skyline" role="img" aria-label="AIを活用して現場の課題解決に取り組む学生チーム"></div>
+  <div class="skyline" role="img" aria-label="AIを活用して現場の課題解決に取り組む学生チーム">
+    <div class="skyline-logo">
+      <img src="images/gemba_ai_logo_transparent.png" alt="GEMBA AI Challenge">
+    </div>
+  </div>
   <div class="wrap hero-inner">
     <div class="badges">
       <span class="badge badge--accent">2026.11.28–29</span>
