@@ -437,6 +437,22 @@
   }
   .entry strong { font-weight: 600; }
 
+  .cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 28px;
+    border-radius: 999px;
+    background: var(--blue);
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.02rem;
+    text-decoration: none;
+    transition: background 0.15s ease;
+  }
+  .cta-button:hover { background: var(--navy); }
+  .cta-button:focus-visible { outline: 2px solid var(--navy); outline-offset: 3px; }
+
   /* Community */
   .slack-card,
   .line-card {
@@ -594,6 +610,7 @@
     <h1>GEMBA<br><em>AI Challenge</em></h1>
     <p class="subtitle">価値創出のためのAI活用ビジネスコンテスト</p>
     <p class="tagline">AIやデータサイエンスを学ぶ学生が、ビジネスとしての実装力を競う2日間。1日目はプログラムを通じてアイデアを磨き、2日目に審査・発表を行います。上位チームには<strong>賞金</strong>をご用意し、お弁当と立食もご提供します（食事代は参加費に含まれます）。</p>
+    <a class="cta-button" href="https://forms.gle/tbryUBrQBJvWve367" target="_blank" rel="noopener">応募フォームはこちら <span aria-hidden="true">→</span></a>
   </div>
 </header>
 
@@ -732,7 +749,8 @@
 
       <div class="entry" style="margin-top:32px;">
         <span class="dot" aria-hidden="true"></span>
-        <span><strong>参加登録の受付は近日開始予定です。</strong>詳細が決まり次第、本ページにて公開します。</span>
+        <span><strong>参加登録の受付を開始しました。</strong>下記の応募フォームからお申し込みください。</span>
+        <a class="cta-button" href="https://forms.gle/tbryUBrQBJvWve367" target="_blank" rel="noopener">応募フォームを開く <span aria-hidden="true">→</span></a>
       </div>
     </div>
   </section>
@@ -754,7 +772,7 @@
       </a>
 
       <h3 class="community-subhead">最新情報を受け取る</h3>
-      <p class="lede">公式LINEでは、日程・会場・参加登録開始などの確定情報を随時配信します。</p>
+      <p class="lede">公式LINEでは、日程・会場などの確定情報を随時配信します。</p>
       <a class="line-card" href="https://lin.ee/umiDVc6" target="_blank" rel="noopener">
         <span class="line-card-qr">
           <img src="https://qr-official.line.me/gs/M_093pehuy_BW.png?oat_content=qr" alt="公式LINE友だち追加QRコード" width="120" height="120">
