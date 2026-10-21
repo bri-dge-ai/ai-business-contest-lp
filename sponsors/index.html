@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>協賛企業｜GEMBA AI Challenge</title>
+<meta name="description" content="GEMBA AI Challengeにご協賛いただいている企業をご紹介します。">
+<link rel="icon" type="image/png" href="../images/gemba_ai_favicon_outlined.png">
+<link rel="apple-touch-icon" href="../images/gemba_ai_favicon_outlined.png">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TKCYPRG92N"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TKCYPRG92N');
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #ffffff;
+    --bg-rgb: 255, 255, 255;
+    --surface: #f4f6f8;
+    --ink: #10171c;
+    --ink-soft: #6f6f6f;
+    --blue: #0874bb;
+    --navy: #003580;
+    --line: rgba(16, 23, 28, 0.12);
+    --shadow: rgba(16, 23, 28, 0.06);
+
+    --font-body: "IBM Plex Sans JP", "Hiragino Sans", "Yu Gothic", "YuGothic", "Noto Sans JP", -apple-system, sans-serif;
+    --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #071322;
+      --bg-rgb: 7, 19, 34;
+      --surface: #0d1f33;
+      --ink: #eaf1f8;
+      --ink-soft: #9fb0c0;
+      --blue: #35a7e6;
+      --navy: #5b7fd1;
+      --line: rgba(234, 241, 248, 0.14);
+      --shadow: rgba(0, 0, 0, 0.35);
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --bg: #071322;
+    --bg-rgb: 7, 19, 34;
+    --surface: #0d1f33;
+    --ink: #eaf1f8;
+    --ink-soft: #9fb0c0;
+    --blue: #35a7e6;
+    --navy: #5b7fd1;
+    --line: rgba(234, 241, 248, 0.14);
+    --shadow: rgba(0, 0, 0, 0.35);
+  }
+
+  :root[data-theme="light"] {
+    --bg: #ffffff;
+    --bg-rgb: 255, 255, 255;
+    --surface: #f4f6f8;
+    --ink: #10171c;
+    --ink-soft: #6f6f6f;
+    --blue: #0874bb;
+    --navy: #003580;
+    --line: rgba(16, 23, 28, 0.12);
+    --shadow: rgba(16, 23, 28, 0.06);
+  }
+
+  * { box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    * { animation: none !important; transition: none !important; }
+  }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--font-body);
+    line-height: 1.8;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  img, svg { max-width: 100%; }
+  a { color: inherit; }
+
+  .wrap {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 0 clamp(20px, 5vw, 56px);
+  }
+
+  /* ---------- Page header ---------- */
+  .pagebar {
+    border-bottom: 1px solid var(--line);
+  }
+  .pagebar-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+  .pagebar-logo img {
+    display: block;
+    height: 34px;
+    width: auto;
+  }
+  .backlink {
+    font-family: var(--font-mono);
+    font-size: 0.74rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    text-decoration: none;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 7px 16px;
+    white-space: nowrap;
+  }
+  .backlink:hover { color: var(--blue); border-color: var(--blue); }
+  .backlink:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
+
+  /* ---------- Page lede ---------- */
+  .pagehead {
+    padding: clamp(44px, 7vw, 80px) 0 clamp(28px, 4vw, 44px);
+  }
+  .pagehead h1 {
+    font-weight: 700;
+    font-size: clamp(1.9rem, 4.4vw, 2.9rem);
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+    margin: 0 0 18px;
+    text-wrap: balance;
+  }
+  .pagehead h1 em {
+    font-style: normal;
+    color: var(--blue);
+  }
+
+  /* ---------- Sections ---------- */
+  section { padding: clamp(40px, 6vw, 72px) 0; }
+  section + section { border-top: 1px solid var(--line); }
+
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--navy);
+    margin: 0 0 14px;
+  }
+  h2 {
+    font-weight: 700;
+    font-size: clamp(1.5rem, 2.6vw, 2rem);
+    letter-spacing: -0.01em;
+    margin: 0 0 24px;
+    text-wrap: balance;
+  }
+  .lede {
+    max-width: 42em;
+    font-size: 1.02rem;
+    color: var(--ink-soft);
+    margin: 0;
+  }
+  .lede + .lede { margin-top: 1.2em; }
+
+  .badge {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 5px 12px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    color: var(--ink-soft);
+    line-height: 1.5;
+  }
+  .badge--accent {
+    color: var(--blue);
+    border-color: var(--blue);
+  }
+
+  /* ---------- Sponsor grid ---------- */
+  .sponsor-grid {
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+  }
+  .sponsor-tile {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    border: 1px dashed var(--line);
+    border-radius: 12px;
+    padding: 16px;
+  }
+  .sponsor-tile img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+  .sponsor-tile-placeholder {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+  }
+  .sponsor-tile-flag {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    font-family: var(--font-mono);
+    font-size: 0.62rem;
+    letter-spacing: 0.04em;
+    color: #b45309;
+    background: #fff7ed;
+    border: 1px solid #fdba74;
+    border-radius: 999px;
+    padding: 2px 8px;
+  }
+
+  .entry {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    margin-top: 32px;
+    padding: 20px 22px;
+    background: var(--surface);
+    border-radius: 12px;
+    font-size: 0.94rem;
+    color: var(--ink-soft);
+  }
+  .entry .dot {
+    flex: none;
+    width: 8px;
+    height: 8px;
+    margin-top: 9px;
+    border-radius: 50%;
+    background: var(--blue);
+  }
+  .entry strong { color: var(--ink); }
+
+  /* ---------- Footer ---------- */
+  footer {
+    border-top: 1px solid var(--line);
+    padding: 44px 0 56px;
+    font-size: 0.88rem;
+    color: var(--ink-soft);
+  }
+  footer p { margin: 0 0 8px; }
+  footer .copyright {
+    font-family: var(--font-mono);
+    font-size: 0.74rem;
+    letter-spacing: 0.04em;
+    margin-top: 20px;
+  }
+</style>
+</head>
+<body>
+
+<div class="pagebar">
+  <div class="wrap pagebar-inner">
+    <a class="pagebar-logo" href="../" aria-label="GEMBA AI Challenge トップページ">
+      <img src="../images/gemba_ai_logo_transparent.png" alt="GEMBA AI Challenge">
+    </a>
+    <a class="backlink" href="../">トップへ戻る</a>
+  </div>
+</div>
+
+<main>
+
+  <div class="wrap pagehead">
+    <p class="eyebrow">Sponsors</p>
+    <h1>協賛<em>企業</em></h1>
+    <p class="lede">GEMBA AI Challengeにご協賛いただいている企業を紹介します。ロゴは確定次第、順次掲載します。</p>
+    <p style="margin:24px 0 0;"><span class="badge">準備中</span></p>
+  </div>
+
+  <section id="sponsor-list">
+    <div class="wrap">
+      <p class="eyebrow">List</p>
+      <h2>ご協賛企業</h2>
+      <p class="lede">ロゴが届き次第、下記の枠に差し替えます。</p>
+
+      <!--
+        ロゴが決まったら、下記の .sponsor-tile 内を次のように置き換えてください。
+        <div class="sponsor-tile">
+          <img src="../images/sponsors/company-name.png" alt="企業名">
+        </div>
+      -->
+      <div class="sponsor-grid">
+        <div class="sponsor-tile">
+          <span class="sponsor-tile-flag">※確認前</span>
+          <img src="../images/sponsors/incubate-fund.png" alt="Incubate Fund">
+        </div>
+        <div class="sponsor-tile">
+          <span class="sponsor-tile-flag">※確認前</span>
+          <img src="../images/sponsors/anthropic.png" alt="Anthropic">
+        </div>
+        <div class="sponsor-tile">
+          <span class="sponsor-tile-flag">※確認前</span>
+          <img src="../images/sponsors/strike.webp" alt="STRIKE">
+        </div>
+        <div class="sponsor-tile"><span class="sponsor-tile-placeholder">LOGO</span></div>
+      </div>
+
+      <div class="entry">
+        <span class="dot" aria-hidden="true"></span>
+        <span><strong>掲載ロゴは許可取り用の仮掲載（※確認前）です。</strong>各社の承諾が取れ次第、正式掲載に切り替えます。</span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>本ページの内容は現時点の想定です。確定次第あらためてお知らせします。</p>
+    <p>主催：GEMBA AI Challenge 運営チーム</p>
+    <p class="copyright">© 2026 GEMBA AI Challenge 運営チーム</p>
+  </div>
+</footer>
+
+</body>
+</html>
